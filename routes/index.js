@@ -10,11 +10,12 @@ router.get('/',function (req,res) {
   res.render('pages/index');
 });
 
-router.post('/', upload.any(), function (req,res) {
+router.post('/', upload.array(), function (req,res) {
 // var k = req.files;
 // console.log(k);
 // res.render('pages/index');
-res.send(req.files);
+console.log(req.body);
+res.send(req);
 })
 
 module.exports = router;
