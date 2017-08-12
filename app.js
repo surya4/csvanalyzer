@@ -2,11 +2,10 @@ const express = require('express');
 const app = express();
 const http = require('http');
 var path = require('path');
-var mysql     =    require('mysql');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 
-const port = process.env.PORT || 4337;
+const port = process.env.PORT || 4333;
 
 var index = require('./routes/index');
 var configDB = require('./config/db.js');
